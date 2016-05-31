@@ -143,6 +143,10 @@ USE_OPENGL_RENDERER := true
 HAVE_ADRENO_SOURCE:= false
 OVERRIDE_RS_DRIVER:= libRSDriver_adreno.so
 
+# FingerPrint
+PRODUCT_PACKAGES += \
+    fingerprintd
+    
 # Gps
 TARGET_GPS_HAL_PATH := $(DEVICE_PATH)/gps
 TARGET_NO_RPC := true
